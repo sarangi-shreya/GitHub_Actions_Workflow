@@ -4,12 +4,12 @@ name: "Hello world workflow"
 on:
     push:
         branches:
-            - master 
+            - main
             - production
 
 jobs:
     hello_world:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-latest   # This tells what type of running environment will be setup on the machine where this wotkflow will be executed. This machines are called runners
         steps:
             - name: "Print hello world"
               run: echo "Hello World" 
